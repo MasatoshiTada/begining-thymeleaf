@@ -17,6 +17,7 @@ Eclipseの場合は、インポート時に[Maven]->[既存のMavenプロジェ�
 # 実行
 
 Tomcat 8.0.xにデプロイして、ブラウザで下記のURLにアクセスしてください。
+
 http://localhost:8080/beginning-thymeleaf/
 
 # curlからの多言語対応の確認
