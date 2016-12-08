@@ -25,7 +25,7 @@ http://localhost:8080/beginning-thymeleaf/
 日本語
 
 ```bash
-$ curl -H "Accept-Language: ja" http:/ost:8080/beginning-thymeleaf/hello?count=0
+$ curl -H "Accept-Language: ja" http:/localhost:8080/beginning-thymeleaf/hello?count=0
 ```
 
 英語
