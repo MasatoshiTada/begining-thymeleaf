@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>RESULT</title>
+    <link rel="stylesheet" href="../../css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
-$END$
+
+<table border="1" th:unless="${#lists.isEmpty(userList)}">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+    </tr>
+    <tr th:each="user : ${userList}" th:object="${user}">
+        <td th:text="*{id}">111</td>
+        <td th:text="*{name}">Yumi Wakatsuki</td>
+    </tr>
+    <!--/*-->
+    <tr>
+        <td>222</td>
+        <td>Reika Sakurai</td>
+    </tr>
+    <tr>
+        <td>333</td>
+        <td>Erika Ikuta</td>
+    </tr>
+    <!--*/-->
+</table>
+
+<p th:if="${#lists.isEmpty(userList)}" th:text="#{nothingToShow}">表示するユーザーがありません。</p>
+
+<a href="../../index.html" th:href="@{/}" th:text="#{backToTop}">トップページに戻る</a>
 </body>
 </html>
