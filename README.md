@@ -14,6 +14,8 @@ $ git clone https://github.com/MasatoshiTada/beginning-thymeleaf.git
 IntelliJで作成していますが、EclipseやNetBeansでもインポート可能です。
 Eclipseの場合は、インポート時に[Maven]->[既存のMavenプロジェクト]でインポートしてください。
 
+![プロジェクトのフォルダ構造](./images/project.png "プロジェクトのフォルダ構造")
+
 # 実行
 
 Tomcat 8.0.xにデプロイして、ブラウザで下記のURLにアクセスしてください。
